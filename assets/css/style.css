@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.logo-home{
+    width: 145px;
+}
+.containe{
+    background-color: #caf0f8;
+    align-content: center;
+}
+.boton-navbar{
+    color: white; 
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(248, 244, 248, 0.37);
+}
+.boton-navbar:hover{
+    background-color: #bde0fe;
+    transform: scale(1.05);
+    color: #08052c;
+}
+.container{
+    padding: 20px;
+}
+
+.productos{
+    color: #08052c;
+}
+.politi{
+    padding-left: 30px;
+
+}
+
+/* Ajustes del slider */
+/* Ajuste general del slider */
+/* Ajustes generales del slider */
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Limita el ancho máximo del slider */
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  }
+  
+  /* Imágenes del slider */
+  .carousel-inner img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+  }
+  
+  /* Botones de navegación */
+  .botn {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10; /* Asegura que los botones estén encima del slider */
+    pointer-events: none; /* Permite interactuar solo con los botones */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border: none;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto; /* Habilita el clic en los botones */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1); /* Cambia el color a blanco */
+  }
+  
+  /* Efectos al pasar el cursor */
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .carousel {
+      max-width: 100%; /* Ajusta el ancho para pantallas pequeñas */
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 40px;
+      height: 40px; /* Tamaño más pequeño para botones en móviles */
+    }
+  }
+  
+  
+
+.hero {
+    display: flex; /* Organiza las columnas en una fila */
+    justify-content: space-around; /* Espacia las columnas uniformemente */
+    align-items: center; /* Centra verticalmente */
+    gap: 1rem; /* Espacio entre las columnas */
+    padding: 1rem;
+     /* Margen interno */
+}
+
+.item {
+    text-align: center; /* Centra el contenido */
+    width: 30%;
+     /* Cada columna ocupa un tercio del ancho */
+}
+
+.image-container {
+    border-radius: 10px;
+    position: relative; /* Contenedor relativo para posicionar texto */
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    aspect-ratio: 1 / 1; /* Mantiene proporción cuadrada */
+    overflow: hidden; /* Oculta contenido que se salga del contenedor */
+}
+
+.image-container img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: 100%; /* Imagen ocupa toda la altura */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+}
+
+.overlay-text {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el punto de referencia */
+    color: white; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra para mayor contraste */
+    z-index: 1; /* Asegura que esté sobre la imagen */
+    text-align: center; /* Centra el texto si es multilinea */
+}
+
+.image-container a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Mantiene el color del texto */
+}
+
+.item img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    transition: transform 0.3s; /* Animación suave */
+}
+.articulos {
+    border: 1px solid #cecda4;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articulos:hover { 
+    background-color: #08052c;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.articulos img{
+    transition: transform 0.3s ease;
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+    align-self: center;
+}
+.articulos:hover img {
+    transform: scale(1.1);
+}
+.articulos p{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px;
+}
+@media (max-width: 768px) {
+.articulos p {
+        font-size: 14px; /* Reducir el tamaño del texto de los párrafos */
+    }
+}
+.video-wrapper {
+    position: relative;
+    width: 100%;           /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+    max-width: 450px;      /* Limita el ancho máximo del video */
+    height: 0;
+    padding-top: 56.25%;    /* Mantiene una relación de aspecto de 16:9 */
+    margin: 0 auto;         /* Centra el contenedor */
+    overflow: hidden;       /* Evita que el video se desborde */
+}
+
+.video-producto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    object-fit: contain;    /* Hace que el video se ajuste dentro del contenedor sin recortarse */
+}
+
+
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 45px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-sizing: 0 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    transition: all 300ms ease;
+}
+.red{
+    background-color: #caf0f8;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+}
+.card-img{
+    width:40px;
+    height: 25px;
+    margin: 0 5px 5px 0;
+    padding: 1px solid rgba(0,0,0,.0705882353)
+}
+.tamaño img{
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #f8f9fa;
+}
+.radio{
+    background-color: #cecda4;
+    color: #08052c;
+    border-radius: 30px;
+}
+footer {
+    background-color: #08052c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #08052c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*caf0f8 1024x577 cecda4*/
