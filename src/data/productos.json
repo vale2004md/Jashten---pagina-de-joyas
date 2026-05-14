@@ -1,0 +1,172 @@
+[
+  {
+    "id": "anillo-clasico",
+    "nombre": "Anillo clásico",
+    "categoria": "Anillos",
+    "precio": 35000,
+    "ley": "18k",
+    "activo": true,
+    "foto": "/joyas/img/anillo.png",
+    "descripcion": "Anillo clásico en oro 18k"
+  },
+  {
+    "id": "anillo-decorado",
+    "nombre": "Anillo decorado",
+    "categoria": "Anillos",
+    "precio": 38000,
+    "ley": "14k",
+    "activo": true,
+    "foto": "/joyas/img/anillodec.png",
+    "descripcion": "Anillo decorado en oro 14k"
+  },
+  {
+    "id": "alianza-plateada",
+    "nombre": "Alianza plateada",
+    "categoria": "Alianzas",
+    "precio": 28000,
+    "ley": "Plata",
+    "activo": true,
+    "foto": "/joyas/img/alianzap.png",
+    "descripcion": "Alianza en plata"
+  },
+  {
+    "id": "alianza-rosada",
+    "nombre": "Alianza rosada",
+    "categoria": "Alianzas",
+    "precio": 32000,
+    "ley": "18k",
+    "activo": true,
+    "foto": "/joyas/img/alianzar.png",
+    "descripcion": "Alianza rosada en oro 18k"
+  },
+  {
+    "id": "aros-clasicos",
+    "nombre": "Aros clásicos",
+    "categoria": "Aros",
+    "precio": 15000,
+    "ley": "18k",
+    "activo": true,
+    "foto": "/joyas/img/aros.png",
+    "descripcion": "Aros clásicos en oro 18k"
+  },
+  {
+    "id": "aros-modernos",
+    "nombre": "Aros modernos",
+    "categoria": "Aros",
+    "precio": 18000,
+    "ley": "14k",
+    "activo": true,
+    "foto": "/joyas/img/aros1.png",
+    "descripcion": "Aros modernos en oro 14k"
+  },
+  {
+    "id": "collar-clasico",
+    "nombre": "Collar clásico",
+    "categoria": "Collares",
+    "precio": 22000,
+    "ley": "Plata",
+    "activo": true,
+    "foto": "/joyas/img/collar1.png",
+    "descripcion": "Collar clásico en plata"
+  },
+  {
+    "id": "collar-elegante",
+    "nombre": "Collar elegante",
+    "categoria": "Collares",
+    "precio": 26000,
+    "ley": "18k",
+    "activo": true,
+    "foto": "/joyas/img/collara.png",
+    "descripcion": "Collar elegante en oro 18k"
+  },
+  {
+    "id": "cadena-fina",
+    "nombre": "Cadena fina",
+    "categoria": "Collares",
+    "precio": 19000,
+    "ley": "14k",
+    "activo": true,
+    "foto": "/joyas/img/cadena.png",
+    "descripcion": "Cadena fina en oro 14k"
+  },
+  {
+    "id": "pulsera-clasica",
+    "nombre": "Pulsera clásica",
+    "categoria": "Pulseras",
+    "precio": 17000,
+    "ley": "Plata",
+    "activo": true,
+    "foto": "/joyas/img/pulcera.png",
+    "descripcion": "Pulsera clásica en plata"
+  },
+  {
+    "id": "pulsera-rosada",
+    "nombre": "Pulsera rosada",
+    "categoria": "Pulseras",
+    "precio": 19000,
+    "ley": "18k",
+    "activo": true,
+    "foto": "/joyas/img/pulcerarol.png",
+    "descripcion": "Pulsera rosada en oro 18k"
+  },
+  {
+    "id": "tobillera-fina",
+    "nombre": "Tobillera fina",
+    "categoria": "Tobilleras",
+    "precio": 12000,
+    "ley": "Plata",
+    "activo": true,
+    "foto": "/joyas/img/tobillera1.png",
+    "descripcion": "Tobillera fina en plata"
+  },
+  {
+    "id": "tobillera-elegante",
+    "nombre": "Tobillera elegante",
+    "categoria": "Tobilleras",
+    "precio": 14000,
+    "ley": "14k",
+    "activo": true,
+    "foto": "/joyas/img/tobillera2.png",
+    "descripcion": "Tobillera elegante en oro 14k"
+  },
+  {
+    "id": "dije-marino",
+    "nombre": "Dije marino",
+    "categoria": "Dijes",
+    "precio": 8000,
+    "ley": "Plata",
+    "activo": true,
+    "foto": "/joyas/img/dijemar.png",
+    "descripcion": "Dije marino en plata"
+  },
+  {
+    "id": "dije-nudo",
+    "nombre": "Dije nudo",
+    "categoria": "Dijes",
+    "precio": 9000,
+    "ley": "18k",
+    "activo": true,
+    "foto": "/joyas/img/dijenudo.png",
+    "descripcion": "Dije nudo en oro 18k"
+  },
+  {
+    "id": "conjunto-pyo",
+    "nombre": "Conjunto piedra y oro",
+    "categoria": "Conjuntos",
+    "precio": 45000,
+    "ley": "18k",
+    "activo": true,
+    "foto": "/joyas/img/conjuntopyo.png",
+    "descripcion": "Conjunto piedra y oro 18k"
+  },
+  {
+    "id": "diseno-personalizado",
+    "nombre": "Diseño a pedido",
+    "categoria": "Personalizado",
+    "precio": null,
+    "ley": "A elección",
+    "activo": true,
+    "foto": "/joyas/img/custom.png",
+    "descripcion": "Diseño personalizado a tu gusto"
+  }
+]
