@@ -35,7 +35,7 @@ export function MobileNav() {
 
   return (
     <>
-      <header className="md:hidden sticky top-0 z-30 bg-primary-dark text-white flex items-center justify-between px-3 py-2 shadow">
+      <header className="md:hidden sticky top-0 z-30 bg-[#CAF0F8] text-black flex items-center justify-between px-3 py-2 shadow">
         <button
           onClick={() => setMenuOpen(true)}
           aria-label="Abrir menú"
@@ -69,7 +69,7 @@ export function MobileNav() {
       )}
 
       <aside
-        className={`md:hidden fixed top-0 left-0 z-50 h-full w-72 max-w-[80%] bg-primary-dark flex flex-col transition-transform duration-300 ${
+        className={`md:hidden fixed top-0 left-0 z-50 h-full w-72 max-w-[80%] bg-[#CAF0F8] flex flex-col transition-transform duration-300 ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -78,13 +78,13 @@ export function MobileNav() {
           <button
             onClick={() => setMenuOpen(false)}
             aria-label="Cerrar menú"
-            className="p-2 rounded-lg text-white hover:bg-white/10"
+            className="p-2 rounded-lg text-black hover:bg-white/10"
           >
             <X size={20} />
           </button>
         </div>
         <nav className="flex-1 p-2 flex flex-col gap-1 mt-2 overflow-y-auto">
-          <p className="text-[10px] text-primary-light/50 uppercase tracking-widest px-2 pb-1">
+          <p className="text-[10px] uppercase tracking-widest px-2 pb-1">
             menú
           </p>
           {navItems.map(item => (
@@ -95,8 +95,8 @@ export function MobileNav() {
               className={({ isActive }) =>
                 `w-full text-left px-3 py-3 rounded-lg text-sm transition-colors ${
                   isActive
-                    ? "bg-primary text-white font-medium"
-                    : "text-background hover:bg-white/10"
+                    ? "bg-primary text-black font-medium"
+                    : "text-gray-500 hover:bg-white/10"
                 }`
               }
             >
