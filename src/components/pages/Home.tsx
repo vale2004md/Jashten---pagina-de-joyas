@@ -20,7 +20,7 @@ export function Home() {
         <p className="text-xs text-gray-400 uppercase tracking-widest mb-4">
           Destacados
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {destacados.map(p => (
             <ProductCard key={p.id} product={p} />
           ))}

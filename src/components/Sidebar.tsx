@@ -12,7 +12,7 @@ const navItems: { to: string; label: string }[] = [
 
 export function Sidebar() {
   return (
-    <aside className="w-52 min-h-screen bg-primary-dark flex flex-col flex-shrink-0">
+    <aside className="hidden md:flex w-52 min-h-screen bg-primary-dark flex-col flex-shrink-0">
 
       <div className="p-5 border-b border-white/10 flex justify-center">
         <img
