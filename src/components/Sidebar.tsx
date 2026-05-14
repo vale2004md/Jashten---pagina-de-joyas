@@ -1,14 +1,5 @@
 import { NavLink } from "react-router-dom"
 import { Cart } from "./cart/Cart"
-import type { CartItem } from "./cart/useCart"
-
-interface Props {
-  items: CartItem[]
-  total: () => number
-  totalItems: () => number
-  update: (id: string, delta: number) => void
-  msjWpp: (phone: string) => string
-}
 
 const navItems: { to: string; label: string }[] = [
   { to: "/",          label: "Inicio" },
@@ -19,7 +10,7 @@ const navItems: { to: string; label: string }[] = [
   { to: "/nosotros",  label: "Quiénes somos" },
 ]
 
-export function Sidebar({ items, total, totalItems, update, msjWpp }: Props) {
+export function Sidebar() {
   return (
     <aside className="w-52 min-h-screen bg-primary-dark flex flex-col flex-shrink-0">
 
@@ -57,13 +48,7 @@ export function Sidebar({ items, total, totalItems, update, msjWpp }: Props) {
         <p className="text-[10px] text-primary-light/50 uppercase tracking-widest px-2 pb-2">
           carrito
         </p>
-        <Cart
-          items={items}
-          total={total}
-          totalItems={totalItems}
-          update={update}
-          msjWpp={msjWpp}
-        />
+        <Cart />
       </div>
 
     </aside>
