@@ -1,14 +1,31 @@
-import { useMemo, useState } from "react"
-import productos from "../../data/productos.json"
+import { useEffect, useMemo, useState } from "react"
 import type { Product } from "../../types"
 import { ProductCard } from "../ProductCard"
+import { getProductos } from "../../services/productos"
+
 
 export function Productos() {
   const [categoria, setCategoria] = useState("Todos")
+  const [productos, setProductos] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
 
+  useEffect(() => {
+  async function cargarProductos() {
+    try {
+      const data = await getProductos()
+      setProductos(data)
+    } catch (error) {
+      console.error("Error cargando productos:", error)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  cargarProductos()
+}, [])
   const activos = useMemo(
-    () => (productos as Product[]).filter(p => p.activo),
-    []
+    () => productos.filter(p => p.activo),
+    [productos]
   )
 
   const categorias = useMemo(
@@ -18,7 +35,13 @@ export function Productos() {
 
   const filtrados =
     categoria === "Todos" ? activos : activos.filter(p => p.categoria === categoria)
-
+if (loading) {
+  return (
+    <div className="p-6">
+      <p>Cargando productos...</p>
+    </div>
+  )
+}
   return (
     <div className="flex flex-col flex-1">
       <div className="bg-background px-6 py-5 border-b border-gray-100">
