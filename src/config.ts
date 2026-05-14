@@ -1,4 +1,4 @@
-export const TELEFONO = "5491127703018"
+export const TELEFONO = "5491121884663"
 
 export const SITE = {
   nombre: "Jashten Joyas",
